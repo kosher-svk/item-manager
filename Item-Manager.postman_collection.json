@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "fa1c2f26-0543-436b-9af7-751797bb4bfc",
+		"name": "Item-Manager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19497447"
+	},
+	"item": [
+		{
+			"name": "GET Items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/items",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Count of Items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/items/count",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"items",
+						"count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Price total sum",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/items/sum_total_price",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"items",
+						"sum_total_price"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET One Item",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/items/6405ff9a351408697784724e",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"items",
+						"6405ff9a351408697784724e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH Update One Item",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Another item\",\n    \"price\": 700,\n    \"priceVAT\": 770\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/items/6405ff9a351408697784724e",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"items",
+						"6405ff9a351408697784724e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE One Item",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Another item\",\n    \"price\": 700,\n    \"priceVAT\": 770\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/items/6405ff9a351408697784724e",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"items",
+						"6405ff9a351408697784724e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Create Item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Car516\",\n    \"price\": 1700,\n    \"priceVAT\": 1770,\n    \"code\": \"123hd67890\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/items",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
